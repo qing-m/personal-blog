@@ -1,7 +1,10 @@
 # Header
 menu:
-  Home: /
-  Archives: /archives
+  首页: /
+  标签: /tags
+  归档: /archives
+  分类: /categories
+  关于: /about
 rss: /atom.xml
 
 # Content
@@ -35,3 +38,8 @@ twitter:
 google_plus:
 fb_admins:
 fb_app_id:
+
+# Inject the css and script (aplayer/meting)
+aplayerInject:
+  enable: true
+  per_page: true
