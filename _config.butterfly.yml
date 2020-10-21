@@ -1,10 +1,8 @@
 # Header
 menu:
-  首页: /
-  标签: /tags
-  归档: /archives
-  分类: /categories
-  关于: /about
+  首页: / || fas fa-home
+  归档: /archives/ || fas fa-archive
+  关于: /about/ || fas fa-heart
 rss: /atom.xml
 
 # Content
@@ -14,8 +12,6 @@ fancybox: true
 # Sidebar
 sidebar: right
 widgets:
-- category
-- tag
 - tagcloud
 - archive
 - recent_posts
@@ -43,3 +39,35 @@ fb_app_id:
 aplayerInject:
   enable: true
   per_page: true
+
+# 代码高亮主题
+highlight_theme: mac
+
+index_post_content:
+  method: 3
+  length: 500 # if you set method to 2 or 3, the length need to config
+
+# 主页subtitle
+subtitle:
+  enable: true
+  # 打字效果
+  effect: true
+  # 循环或者只打字一次
+  loop: false
+  # source调用第三方服务
+  # source: false 关闭调用
+  # source: 1  调用搏天api的随机语录（简体） https://api.btstu.cn/
+  # source: 2  调用一言网的一句话（简体） https://hitokoto.cn/
+  # source: 3  调用一句网（简体） http://yijuzhan.com/
+  # source: 4  调用今日诗词（简体） https://www.jinrishici.com/
+  # subtitle 会先显示 source , 再显示 sub 的内容
+  source: 1
+  # 如果有英文逗号' , ',请使用转义字元 &#44;
+  # 如果有英文双引号' " ',请使用转义字元 &quot;
+  # 开头不允许转义字元，如需要，请把整个句子用双引号包住
+  # 例如 ”&quotNever put off till tomorrow what you can do today&quot"
+  # 如果关闭打字效果，subtitle只会显示sub的第一行文字
+  sub:
+    - 今日事&#44;今日毕
+    - Never put off till tomorrow what you can do today
+default_top_img: 'https://images.pexels.com/photos/1660603/pexels-photo-1660603.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500'
